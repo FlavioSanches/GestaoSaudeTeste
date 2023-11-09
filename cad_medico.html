@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/cadastro_medico.css">
+    <title>GestaoSaude</title>
+</head>
+<body>
+    <section class="logo">
+        <a class="nome_azul" href="index.html">Gestão</a><a class="nome_branco" href="index.html">Saúde</a>
+    </section>
+    <section class="bloco_principal">    
+    <form action="pastadestino.php" method="POST">
+        <div class="cadastro-container">
+        <div class="form-row ">
+            <div class="form-group col-md-6">
+                <label for="inputName" class="escrita">Nome</label>
+                <input type="text" id="inputName" class="form-control" placeholder="John" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputSurname" class="escrita">Sobrenome</label>
+                <input type="text" class="form-control" id="inputSurname" placeholder="Doe" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEmail4" class="escrita">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="doejohnn@email.com" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4" class="escrita">Senha</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="123@abc" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress" class="escrita">Endereço</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Av Vinicius de Morais, 25" required>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity" class="escrita">Cidade</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Cataguases" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState" class="escrita">Estado:</label>
+                <select id="inputState" class="form-control" required>
+                    <option selected hidden>Escolha...</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="inputState" class="escrita">Especialidade:</label>
+                <select id="inputState" class="form-control" required>
+                    <option selected hidden>Escolha...</option>
+                    <option value="BA">Cardiologista</option>
+                    <option value="AL">Neurologista</option>
+                    <option value="AC">Oftamologista</option>
+                    <option value="AM">Ostopedista</option>
+                    <option value="AP">Pediátra</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="button">Enviar</button>
+        <a href="cadastro.html" class="button">Voltar</a>
+    </div>
+    </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nome_branco {
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.72px;
+}
+
+.nome_azul {
+    color: #041C9B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.72px;
+}
+
+.logo {
+    background-color: #55AAE7;
+    padding: 1%;
+    text-align: center;
+}
+
+.bloco_principal {
+    width: 50%;
+    border: solid black 1px;
+    margin: 8% 25%;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.ipt_nome,
+.ipt_senha {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn_entrar,
+.btn_voltar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px; /* Espaçamento entre os botões */
+    margin-top: 10px;
+}

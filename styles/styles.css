@@ -1,0 +1,331 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* =========== Hover =========== */
+a{
+  text-decoration: none;
+}
+
+
+/* ========================================== */
+
+/* =========== Body =========== */
+
+body{
+  background: #a6cae4;
+}
+
+/* ========================================== */
+
+/* =========== Área do cabeçalho =========== */
+
+.area_cabecalho{
+  background-color: #55AAE7;
+  padding: 1%;
+}
+
+/* ========================================== */
+
+/* =========== Botões do cabeçalho =========== */
+
+.area_login{
+  padding: 0.5em;
+  float: right;
+  text-align: right;
+}
+
+.botao_login{
+  display: inline-flex;
+  margin: 0.5em 0.2em 0.5em 0.5em;
+  padding: 0.2em 0.5em;
+  justify-content: center;
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid white;
+}
+
+.botao:hover{
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #041C9B;
+  border: 1px solid #FFF;
+}
+
+.botao_cadastro{
+  display: inline-flex;
+  margin: 0.5em 0.5em 0.5em 0em;
+  padding: 0.2em 0.5em;
+  justify-content: center;
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid white;
+}
+
+/* ========================================== */
+
+/* =========== Texto dos botões =========== */
+
+.login{
+  color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+  font-weight: bold;
+}
+
+.registre{
+  color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+  font-weight: bold;
+}
+
+/* ========================================== */
+
+/* =========== Logo e nome =========== */
+
+.area_logo{
+  display: inline-block;
+  padding: 0.5em;
+  margin: 0.3em;
+  border-radius: 60px;
+  justify-content: center;
+}
+
+.two_colors {
+  font-size: 36px;
+  background: linear-gradient(to right,#041C9B 53%,white 47%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* ========================================== */
+
+/* =========== Background da primeira parte =========== */
+
+.background_img {
+  background-image: url('../assets/atleta.jpg');
+  width: 100%;
+  height: 36em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  padding: 4% 5%; 
+}
+
+/* ========================================== */
+
+/* =========== Texto do bloco da primeira parte =========== */
+
+.texto_bloco_arredondado{
+  color: #0522b2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: -0.48px;
+}
+
+/* ========================================== */
+
+/* =========== Bloco da primeira parte =========== */
+
+.bloco_arredondado{
+  display: block;
+  width: 40%; 
+  margin-bottom: 3%; 
+  padding: 0.5em;
+  text-align: center;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.432);
+  border: 2px solid rgb(40, 80, 160);
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card.zoomed {
+  transform: scale(1.1);
+}
+
+/* ========================================== */
+
+/* =========== Título da segunda parte =========== */
+
+.titulo{
+  margin-left: 50px;
+  display: flex;
+  width: 1239px;
+  height: 118px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* ========================================== */
+/* CARROSSEL */
+
+.carrossel{
+  background:  white;
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 30px;
+  border:solid black 1px;
+  padding: 2%;
+}
+.texto_carrossel{
+  text-align: center;
+  color: black;
+  font-size: 24px;
+}
+
+.carousel-control-prev .carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-chevron-right" viewBox="0 0 16 16"><path d="M5.293 8l4.147 4.146a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708.708L5.293 8z"/></svg>');
+}
+
+.carousel-control-next .carousel-control-next-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-chevron-left" viewBox="0 0 16 16" transform="rotate(180)"><path d="M5.293 8l4.147 4.146a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708.708L5.293 8z"/></svg>');
+}
+
+/* ========================================== */
+
+/* =========== Rodape =========== */
+
+.area_rodape{
+  margin-top: 8%;
+  background-color:  #55AAE7;
+  padding: 1%;
+  width: 100%;
+}
+
+/* =========== Escrita dos direitos no rodape =========== */
+
+.direitos{
+  display: inline-block;
+  width: 750px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #041C9B;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.text-center{
+  color:white;
+}
+
+.review {
+  background: white;
+  transition: all 0.3s linear;
+  text-align: center;
+}
+
+.review:hover {
+  box-shadow: #041C9B;
+}
+
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+  
+#person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background:#041C9B;
+  position: absolute;
+  top: -0.3rem;
+  right: -0.3rem;
+  border-radius: 50%;
+}
+
+#author {
+  margin-bottom: 0.25rem;
+}
+
+#job {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color:black;
+  font-size: 0.85rem;
+}
+
+#info {
+  margin-bottom: 0.75rem;
+}
+
+.prev-btn,
+.next-btn {
+  color:#041C9B;
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color:#322653;
+}
+
+.random-btn {
+  margin-top: 0.5rem;
+  background: white;
+  color:#041C9B ;
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  border-radius: 0.25rem;
+  transition: all 0.3s linear;
+  border-color:#041C9B;
+  cursor: pointer;
+}
+
+.random-btn:hover {
+  background-color: transparent; 
+  color:#041C9B;
+}
+
+.tamanho_avaliacao{
+  width: 80%;
+}
