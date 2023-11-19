@@ -10,11 +10,11 @@
     $clinicaDao = new ClinicaDAO($conn, $BASE_URL);
 
     if(empty($id)){
-       $message->setMessage("A clinica não foi encontrada", "error", "index.php"); 
+       $message->setMessage("A clinica não foi encontrada", "error", "back"); 
     }else{
         $clinica = $clinicaDao->findById($id);
         if(!$clinica){
-            $message->setMessage("A clinica não foi encontrada", "error", "index.php"); 
+            $message->setMessage("A clinica não foi encontrada", "error", "back"); 
         }
     }
 

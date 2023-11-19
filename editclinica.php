@@ -15,11 +15,11 @@
     $id = filter_input(INPUT_GET,"id");
 
     if(empty($id)){
-        $message->setMessage("A clinica não foi encontrada", "error", "index.php"); 
+        $message->setMessage("A clinica não foi encontrada1", "error", "back"); 
      }else{
          $clinica = $clinicaDao->findById($id);
          if(!$clinica){
-             $message->setMessage("A clinica não foi encontrada", "error", "index.php"); 
+             $message->setMessage("A clinica não foi encontrada2", "error", "back"); 
          }
      }
  

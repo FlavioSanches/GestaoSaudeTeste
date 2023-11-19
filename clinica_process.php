@@ -14,7 +14,7 @@ $clinicaDao = new ClinicaDAO($conn, $BASE_URL);
 
 $type = filter_input(INPUT_POST, "type");
 
-$userData = $userDao->verifyToken();
+$userData = $userDao->verifyToken(true);
 
 if($type === "create"){
 
@@ -78,6 +78,6 @@ else if($type === "delete"){
     }
 
 }else{
-    $message->setMessage("Informações invalidas2!", "error", "back");
+    $message->setMessage("Informações invalidas!", "error", "back");
 }
 
