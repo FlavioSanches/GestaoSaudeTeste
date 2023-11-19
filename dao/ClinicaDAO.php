@@ -59,9 +59,9 @@ class ClinicaDAO implements ClinicaDAOInterface{
 
         $clinica = [];
 
-        $stmt = $this->conn->prepare("SELECT * FROM clinica WHERE medico_cod_medico = :medico_id");
+        $stmt = $this->conn->prepare("SELECT * FROM clinica WHERE cod_clinica = :clinica_id");
 
-        $stmt->bindParam(":medico_id", $id);
+        $stmt->bindParam(":clinica_id", $id);
 
         $stmt->execute();
 
